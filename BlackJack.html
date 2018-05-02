@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src = "BlackJack.js"></script>
+    <link rel="stylesheet" type="text/css" href="BlackJack.css">
+</head>
+<body>
+    <h1>Black Jack Game</h1>
+    <h2>Player 1 must begin!</h2>
+    <div>
+        <div id="rightDiv">
+            <p>Player #1 Cards:</p>
+            <p id="PlayerOneCards">0</p>
+            <form>
+                <input id="Draw1Button" type="button" value="Draw" onclick="drawFunctionPlayer1();"/>
+                <input id="Stay1Button" type="button" value="Stay" onclick="stayFunctionPlayer1();"/>
+            </form>
+        </div>
+        <div id="leftDiv">
+            <p>Player #2 Cards:</p>
+            <p id="PlayerTwoCards">0</p>
+            <form>
+                <input id="Draw2Button" type="button" value="Draw" onclick="drawFunctionPlayer2();"/>
+                <input id="Stay2Button" type="button" value="Stay" onclick="stayFunctionPlayer2();"/>
+            </form>
+        </div>
+        <h2>Result:</h2>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
